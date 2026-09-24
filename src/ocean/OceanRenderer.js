@@ -26,7 +26,7 @@ export async function createOceanRenderer(canvas, { onFrame, onReady, onError } 
   const params = new URLSearchParams(location.search);
   const highQuality = params.get('quality') === 'high';
   let sky;
-  try { sky = await new TextureLoader().loadAsync('/environment/sky-panorama.jpg'); }
+  try { sky = await new TextureLoader().loadAsync(`${import.meta.env.BASE_URL}environment/sky-panorama.jpg`); }
   catch (error) { renderer.dispose(); throw error; }
   sky.colorSpace = NoColorSpace;
   sky.wrapS = sky.wrapT = ClampToEdgeWrapping;

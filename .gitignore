@@ -1,4 +1,5 @@
 node_modules/
+.venv/
 dist/
 .DS_Store
 分析/
@@ -9,7 +10,8 @@ dist/
 *.log
 __pycache__/
 *.pyc
-# Public export excludes project documentation.
+# 只公开项目 README；保留对内部文档和分析产物的排除。
 *.md
+!/README.md
 *.mdx
 docs/
