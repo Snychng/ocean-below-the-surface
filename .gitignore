@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+分析/
+.agents/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+*.pyc
+# Public export excludes project documentation.
+*.md
+*.mdx
+docs/
